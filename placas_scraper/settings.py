@@ -63,9 +63,12 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'placas_scraper.pipelines.PlacasScraperPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'placas_scraper.pipelines.PlacasScraperPipeline': 300,
+}
+
+SQLITE_FILE = 'placas.db'
+SQLITE_TABLE = 'placas'
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
